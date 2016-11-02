@@ -1,12 +1,14 @@
 #ServerCraft
 
+Feng Zhang (jumphone@163.com)
+
 For python2.7 and django1.8.7
+
+##Preparations:
 
 pip install django==1.8.7
 
 pip install servercraft
-             
-Feng Zhang (jumphone@163.com)
              
 ##Step1: Write a python file: demo.py.
              
