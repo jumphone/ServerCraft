@@ -1,6 +1,6 @@
 #ServerCraft
 
-#For python2.7 and django1.8.7)
+For python2.7 and django1.8.7
              
 Feng Zhang (jumphone@163.com)
              
