@@ -2,7 +2,7 @@
 
 Feng Zhang (jumphone@163.com)
 
-For python2.7 and django1.8.7
+python2.7 and django1.8.7
 
 ##Preparations:
 
