@@ -4,6 +4,7 @@ Feng Zhang (jumphone@163.com)
 
 python2.7 and django1.8.7
 
+
 ###Preparations:
 
 pip install django==1.8.7
@@ -24,6 +25,7 @@ build_server(server_dir, server_name)
 
 add_app(server_dir ,app_name, server_name)
 
+
 ###Step2: Type commands.
 
 python demo.py
@@ -32,6 +34,9 @@ cd ./server_center
 
 sh run_server.sh
 
+
 ###Step3: Check it! 
 
 http://127.0.0.1:8000/app1/
+
+
