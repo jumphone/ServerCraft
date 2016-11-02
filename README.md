@@ -1,5 +1,4 @@
-# servercraft
-ServerCraft
+#ServerCraft
 
 #For python2.7 and django1.8.7)
              
