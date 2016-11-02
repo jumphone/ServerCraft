@@ -63,7 +63,7 @@ def handler_start(request):
     if Handler.objects.filter(status='Processing').count() >= MAX_COUNT:
         return HttpResponse('Too many visitors! Please try again later.')
 
-    input_text = request.POST.get('input_text')
+    input_text = request.POST.get('input_text').replace('\r','')
     input_file = request.FILES.get('input_file')
     input_condition = request.POST.get('conditions')
 
