@@ -1,4 +1,4 @@
-##ServerCraft
+#ServerCraft
 
 For python2.7 and django1.8.7
 
@@ -8,7 +8,7 @@ pip install servercraft
              
 Feng Zhang (jumphone@163.com)
              
-#Step1: Write a python file: demo.py.
+##Step1: Write a python file: demo.py.
              
 from servercraft import *
 
@@ -22,7 +22,7 @@ build_server(server_dir, server_name)
 
 add_app(server_dir ,app_name, server_name)
 
-#Step2: Type commands.
+##Step2: Type commands.
 
 python demo.py
 
@@ -30,6 +30,6 @@ cd ./server_center
 
 sh run_server.sh
 
-#Step3: Check it! 
+##Step3: Check it! 
 
 http://127.0.0.1:8000/app1/
