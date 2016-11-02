@@ -73,6 +73,14 @@ def handler_start(request):
     if not input_text:
         return HttpResponseRedirect('/'+APP_NAME)
     
+    
+    try:
+        h=Handler.objects.get(id= input_text.split('\n')[0])
+        return HttpResponseRedirect('/'+APP_NAME+'/handler/%s/' % h.id)
+    except Exception, e:
+        pass
+
+    
     input_text = "##Condition:" + str(input_condition) + "\n"+ input_text
 
 
