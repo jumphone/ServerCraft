@@ -1,6 +1,10 @@
 #ServerCraft
 
 For python2.7 and django1.8.7
+
+pip install django==1.8.7
+
+pip install servercraft
              
 Feng Zhang (jumphone@163.com)
              
