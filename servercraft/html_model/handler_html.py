@@ -1,4 +1,4 @@
-HANDLER='''
+WAITING='''
 {% extends "__APP_NAME___base.html" %}
 
 {% block meta %}
@@ -20,12 +20,8 @@ HANDLER='''
 
 
 
-    {% if h.status == 'Processing' %}
         <img src="http://app.tianlab.cn/static/img/waiting.gif">
-    {% elif h.status == 'Finish' %}
-     </br>
-        <a class="btn btn-xs btn-primary" href="/__APP_NAME__/handler/download/{{ h.id }}/">Download</a>
-    {% endif %}
+    
 
 </div>
 {% endblock %}
