@@ -77,10 +77,12 @@ def add_app(server_center_dir, app_name, server_name='server_center'):
     subprocess.Popen('cd '+server_center_dir+'/'+server_name+'/static; mkdir '+app_name+'_output',shell=True).wait()
     app_base_file=server_center_dir+'/'+server_name+'/templates/'+app_name+'_base.html'
     app_index_file=server_center_dir+'/'+server_name+'/templates/'+app_name+'_index.html'
-    app_handler_file=server_center_dir+'/'+server_name+'/templates/'+app_name+'_handler_detail.html'
+    app_waiting_file=server_center_dir+'/'+server_name+'/templates/'+app_name+'_waiting.html'
+    app_result_file=server_center_dir+'/'+server_name+'/templates/'+app_name+'_result.html'
     open(app_base_file,'w').write(BASE.replace('__APP_NAME__',app_name))
     open(app_index_file,'w').write(INDEX.replace('__APP_NAME__',app_name))
-    open(app_handler_file,'w').write(HANDLER.replace('__APP_NAME__',app_name))
+    open(app_waiting_file,'w').write(WAITING.replace('__APP_NAME__',app_name))
+    open(app_result_file,'w').write(RESULT.replace('__APP_NAME__',app_name))
     subprocess.Popen('cd '+server_center_dir+'/'+server_name+'/; python manage.py makemigrations',shell=True).wait()
     subprocess.Popen('cd '+server_center_dir+'/'+server_name+'/; python manage.py migrate',shell=True).wait()                   
 
