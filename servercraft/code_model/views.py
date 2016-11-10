@@ -24,7 +24,8 @@ APP_NAME='__APP_NAME__'
 SCRIPT_PATH= os.path.join(os.getcwd(), APP_NAME, 'scripts/script.py')
 
 INDEX_HTML='__APP_NAME___index.html'
-DETAIL_HTML='__APP_NAME___handler_detail.html'
+WAITING_HTML='__APP_NAME___waiting.html'
+RESULT_HTML='__APP_NAME___result.html'
 
 TIMEOUT=100
 MAX_COUNT=10
@@ -129,7 +130,10 @@ def handler_detail(request, hid):
             h.status = 'Failed'
     
     h.save()
-    return render_to_response(DETAIL_HTML, locals())
+    if h.status == 'Processing':
+        return render_to_response(WAITING_HTML, locals())
+    else:
+        return render_to_response(RESULT_HTML, locals())
 
 
 
