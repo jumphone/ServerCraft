@@ -4,7 +4,7 @@ Feng Zhang (jumphone@163.com)
 
 python2.7 and django1.8.7 (pip install django==1.8.7)
 
-virtualenv env
+( virtualenv env )
 
 
 
